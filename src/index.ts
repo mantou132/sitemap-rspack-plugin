@@ -1,6 +1,6 @@
 import { JSONSchema7 } from "json-schema";
 import { validate } from "schema-utils";
-import { Compiler, Compilation, sources } from "webpack";
+import { Compiler, Compilation, sources } from "@rspack/core";
 import { generateSitemaps } from "./generators";
 import {
   RawSource,

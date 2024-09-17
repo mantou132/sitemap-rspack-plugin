@@ -5,15 +5,14 @@ import {
   isValidChangeFreq
 } from "sitemap";
 import { promisify } from "util";
-import { sources, Compilation } from "webpack";
-import webpackSources from "webpack-sources";
+import { sources, Compilation } from "@rspack/core";
 import { gzip as gzipCallback } from "zlib";
 import { Path, SitemapPathOptions } from "./types";
 
 // Webpack 4/5 compat
 // https://github.com/webpack/webpack/issues/11425#issuecomment-686607633
 // istanbul ignore next
-const { RawSource } = sources || webpackSources;
+const { RawSource } = sources;
 export { RawSource };
 
 // gzip function that returns a Promise so it can be awaited

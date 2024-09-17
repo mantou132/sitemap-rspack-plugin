@@ -1,7 +1,7 @@
 {
-  "name": "sitemap-webpack-plugin",
+  "name": "sitemap-rspack-plugin",
   "version": "1.1.1",
-  "description": "Webpack plugin to generate a sitemap.",
+  "description": "Rspack plugin to generate a sitemap.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -37,10 +37,10 @@
   "homepage": "https://github.com/schneidmaster/sitemap-webpack-plugin#readme",
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
+    "@rspack/core": "^1",
     "@types/jest": "^26.0.19",
     "@types/pretty-data": "^0.40.0",
     "@types/rimraf": "^3.0.0",
-    "@types/webpack-sources": "^2.1.0",
     "@typescript-eslint/eslint-plugin": "^4.11.1",
     "@typescript-eslint/parser": "^4.11.1",
     "coveralls": "^3.0.9",
@@ -56,13 +56,11 @@
     "rollup-plugin-typescript2": "^0.29.0",
     "ts-jest": "^26.4.4",
     "ts-node": "^9.1.1",
-    "typescript": "^4.1.3",
-    "webpack": "^5"
+    "typescript": "^4.1.3"
   },
   "dependencies": {
     "schema-utils": "^3.0.0",
-    "sitemap": "^6.0.0",
-    "webpack-sources": "^1.4.3"
+    "sitemap": "^6.0.0"
   },
   "resolutions": {
     "kind-of": "^6.0.3"
